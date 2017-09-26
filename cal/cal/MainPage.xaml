@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:cal"
+             x:Class="cal.MainPage"
+             BackgroundColor="#154360">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="vicxButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#1F618D"/>
+                <Setter Property="TextColor" Value="#ECF0F1" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+            <Style x:Key="vicx1Button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#48C9B0"/>
+                <Setter Property="TextColor" Value="#ECF0F1" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+            <Style x:Key="vicx2Button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#F4511E"/>
+                <Setter Property="TextColor" Value="#ECF0F1" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+            <Style x:Key="vicx3Button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#1A5276"/>
+                <Setter Property="TextColor" Value="#ECF0F1" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid x:Name="controlGrid" RowSpacing="0.1" ColumnSpacing="0.1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+        <Label x:Name="lblop" Text="" Grid.Row="0" HorizontalTextAlignment="End" VerticalTextAlignment="End" TextColor="White"  FontSize="40" Grid.ColumnSpan="4" />
+        <Label x:Name="lblResul" Text="0" Grid.Row="1" HorizontalTextAlignment="End" VerticalTextAlignment="End" TextColor="White"  FontSize="40" Grid.ColumnSpan="4" />
+        <Button x:Name="btn1" Text = "C" Clicked="btn1_Clicked" Grid.Row="2" Grid.Column="0" Style="{StaticResource vicx2Button}" />
+        <Button x:Name="btn2" Text = "DEL" Clicked="btn2_Clicked" Grid.Row="2" Grid.Column="1" Style="{StaticResource vicx2Button}" />
+        <Button x:Name="btn3" Text = "x" Clicked="btn3_Clicked" Grid.Row="2" Grid.Column="2" Style="{StaticResource vicx3Button}" />
+        <Button x:Name="btn4" Text = "÷" Clicked="btn4_Clicked" Grid.Row="2" Grid.Column="3" Style="{StaticResource vicx3Button}" />
+        <Button x:Name="btn5" Text = "7" Clicked="btn5_Clicked" Grid.Row="3" Grid.Column="0" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn6" Text = "8" Clicked="btn6_Clicked" Grid.Row="3" Grid.Column="1" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn7" Text = "9" Clicked="btn7_Clicked" Grid.Row="3" Grid.Column="2" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn8" Text = "-" Clicked="btn8_Clicked" Grid.Row="3" Grid.Column="3" Style="{StaticResource vicx3Button}" />
+        <Button x:Name="btn9" Text = "4" Clicked="btn9_Clicked" Grid.Row="4" Grid.Column="0" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn10" Text = "5" Clicked="btn10_Clicked" Grid.Row="4" Grid.Column="1" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn11" Text = "6" Clicked="btn11_Clicked" Grid.Row="4" Grid.Column="2" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn12" Text = "+" Clicked="btn12_Clicked" Grid.Row="4" Grid.Column="3" Style="{StaticResource vicx3Button}" />
+        <Button x:Name="btn13" Text = "1" Clicked="btn13_Clicked" Grid.Row="5" Grid.Column="0" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn14" Text = "2" Clicked="btn14_Clicked" Grid.Row="5" Grid.Column="1" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn15" Text = "3" Clicked="btn15_Clicked" Grid.Row="5" Grid.Column="2" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn16" Text = "=" Clicked="btn16_Clicked" Grid.RowSpan="2" Grid.Row="5" Grid.Column="3" Style="{StaticResource vicx1Button}" />
+        <Button x:Name="btn17" Text = "0" Clicked="btn17_Clicked" Grid.ColumnSpan="2" Grid.Row="6" Grid.Column="0" Style="{StaticResource vicxButton}" />
+        <Button x:Name="btn18" Text = "." Clicked="btn18_Clicked" Grid.Row="6" Grid.Column="2" Style="{StaticResource vicxButton}" />
+            
+        </Grid>
+</ContentPage>
+
